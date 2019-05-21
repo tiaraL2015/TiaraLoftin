@@ -23,7 +23,7 @@ body,html{
   border-bottom: 2px solid #ff33cc;
 
   }
-  
+
 .bgimg-1, .bgimg-2, .bgimg-3{
   background-attachment: fixed;
   background-position: center;
@@ -149,7 +149,16 @@ body,html{
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -410,7 +419,7 @@ img.hover-shadow {
   </div>
 </div>
     <p>Senior Project for Senior Project class at North Carolina Agricultural and Technical State University.</p>
-  </center>  
+  </center>
 </div>
 
 <div id="myModal" class="modal">
@@ -461,45 +470,105 @@ img.hover-shadow {
 
   </div>
 </div>
+<!--stop-->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide"><font color="yellow">CODE</font></span>
   </div>
 </div>
-</div>
   <h3 style="text-align:center"><font color="w3-blue">~SNIPPET OF  CODE~</font></h3>
   <p style="text-align:center"><em>Here are some of my latest codes.<br> Click on the images to make them bigger and view description</em></p><br>
-<div class="row" id="portfolio">
-  <div class="column">
+  <div class="row" id="portfolio">
+    <div class="column">
 
-    <img src="Screen Shot 2019-04-22 at 12.03.37 PM.png" height="461" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="Screen Shot 2019-04-22 at 12.03.37 PM.png" style="width:100%; height:450px;" onclick="openModal2();currentSlide2(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="Screen Shot 2019-04-22 at 12.08.05 PM.png" style="width:100%; height:450px;" onclick="openModal2();currentSlide2(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="Screen Shot 2019-04-22 at 12.03.53 PM.png"  style="width:100%; height:450px;" onclick="openModal2();currentSlide2(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="Screen Shot 2019-04-22 at 12.08.23 PM.png" style="width:100%; height:450px;"  onclick="openModal2();currentSlide2(4)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="Screen Shot 2019-04-22 at 12.24.41 PM.png" style="width:100%; height:450px;" onclick="openModal2();currentSlide2(5)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="Screen Shot 2019-04-22 at 12.04.10 PM.png" style="width:100%; height:450px;" onclick="openModal2();currentSlide2(6)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="Screen Shot 2019-04-22 at 12.07.39 PM.png" style="width:100%; height:450px;" onclick="openModal2();currentSlide2(7)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="Screen Shot 2019-04-22 at 12.24.53 PM.png" style="width:100%; height:450px;" onclick="openModal2();currentSlide2(8)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="Screen Shot 2019-04-22 at 12.07.50 PM.png" style="width:100%; height:450px;" onclick="openModal2();currentSlide2(9)" class="hover-shadow cursor">
+    </div>
+    </div>
+  <div id="myModal2" class="modal">
+    <span class="close cursor" onclick="closeModal2()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides2">
+        <div class="numbertext">1 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.03.37 PM.png" style="width:100%">
+        <div class="text">This code will get the current profile picture of the current user by taking a screenshot of the image src stored in the firebase database and will set that at the image src of the 'avatarpic' element.</div>
+      </div>
+
+      <div class="mySlides2">
+        <div class="numbertext">2 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.08.05 PM.png" style="width:100%">
+        <div class="text">This code creates the different components for the different levels of the 'Study Buddies SkatePark Game'. Based on the level that you are on the obstacles will change. This code will also update the positiion of the character. When you press the right or left arrow key or spacebar the characters position will be updated as well as the background image, different icons, and the time control for decending the character after you have jumped.</div>
+      </div>
+
+      <div class="mySlides2">
+        <div class="numbertext">3 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.03.53 PM.png" style="width:100%">
+        <div class="text">This code will save the avatarpic that the current user has clicked to the realtime database, and alert the user that the avatar picture has been saved. </div>
+      </div>
+
+      <div class="mySlides2">
+        <div class="numbertext">4 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.08.23 PM.png" style="width:100%">
+        <div class="text">This code will create the time functions for the 'Study Buddies SkatePark' game which will freeze time when the character collides with the powerup, and resume after a few seconds. Display message for different levels for a few seconds, decend player after acceleration upwards for 1 second, and resume game after user has clicked the pause button.</div>
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">5 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.24.41 PM.png" style="width:100%">
+        <div class="text">This code will login the current user if the username and password matches the criteria and will display a "Hello" message with the username before the '@' just below the profile icon. </div>
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">6 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.04.10 PM.png" style="width:100%">
+        <div class="text">This code will create the different components of the game such as the character based on the users choice, different icons(time, health, coins, level, character) and will start the game and time when the user is ready to play.</div>
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">7 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.07.39 PM.png" style="width:100%">
+        <div class="text">This code will perform the action when the user has collided with the obstacles in the game. If the user collides with the coins it will increment their score by 1 point, if the user collides with the helmet component they will gain an extra life, if the user collides with the freeze powerup time will freeze for a few seconds and then resume, if the user collides with the pedestrian obstacle they will lose a life.</div>
+    </div>
+      <div class="mySlides2">
+        <div class="numbertext">8 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.24.53 PM.png" style="width:100%">
+        <div class="text">This code will sign in the current user if the username and password matches the username and password that has been created. If the username or password does not match then an error message will be displayed for the failed requirement and the user will be unable to login.</div>
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">9 / 9</div>
+        <img src="Screen Shot 2019-04-22 at 12.07.50 PM.png" style="width:100%">
+        <div class="text">This code will remove the powerup from the array and will freeze time. It will also change the obstacle image and and its intended height and width once the user has reached the desired level.</div>
+      </div>
+      <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+    </div>
   </div>
-  <div class="column">
-    <img src="Screen Shot 2019-04-22 at 12.08.05 PM.png" height="461" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Screen Shot 2019-04-22 at 12.03.53 PM.png"  style="width:100%; height:450px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Screen Shot 2019-04-22 at 12.08.23 PM.png" height="461" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Screen Shot 2019-04-22 at 12.24.41 PM.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Screen Shot 2019-04-22 at 12.04.10 PM.png" height="700" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Screen Shot 2019-04-22 at 12.07.39 PM.png" height="600" width="400" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Screen Shot 2019-04-22 at 12.24.53 PM.png" height="500" width="400" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Screen Shot 2019-04-22 at 12.07.50 PM.png" height="500" width="400" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-  </div>
-</div>
 
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
@@ -558,7 +627,7 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
-  
+
 function myMap()
 {
   myCenter=new google.maps.LatLng(35.6125, -77.3666667);
@@ -579,13 +648,18 @@ function myMap()
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
-
+function openModal2() {
+  document.getElementById('myModal2').style.display = "block";
+}
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
-
+function closeModal2() {
+  document.getElementById('myModal2').style.display = "none";
+}
 var slideIndex = 1;
 showSlides(slideIndex);
+showSlides2(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -595,6 +669,13 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -612,7 +693,23 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
